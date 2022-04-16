@@ -40,7 +40,7 @@ ol[class] {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #000;
 }
 
 a:not([class]) {
@@ -72,7 +72,14 @@ select {
   }
 }
 body {
+  background-color: #deeee6;
   font-family: "Roboto", sans-serif;
+}
+
+i {
+  font-size: 20px;
+  width: 25px;
+  text-align: center;
 }
 
 img {
@@ -81,17 +88,15 @@ img {
 
 .container {
   max-width: 1200px;
-  background-color: #c4f5cd;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .header {
-  max-width: 1200px;
   width: 100%;
-  background-color: antiquewhite;
+  background-color: #a5c7ac;
   margin: 0 auto;
-  padding: 10px 15px 15px 10px;
+  padding: 0px 0px 0px 10px;
 }
 
 .header__menu {
@@ -107,28 +112,172 @@ img {
   cursor: pointer;
 }
 
+.header__profile {
+  display: flex;
+  align-items: center;
+  padding: 3px 15px;
+  transition: background 0.2s ease-in-out;
+}
+.header__profile:hover {
+  background-color: #ebc9ab;
+  cursor: pointer;
+}
+
+.header__profile-nickname {
+  margin-right: 20px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
 .header__profile-avatar {
   width: 50px;
   height: 50px;
+  border-radius: 50%;
 }
 
-.nav {
-  max-width: 300px;
-  background-color: rgba(231, 181, 131, 0.521);
+aside {
+  width: 200px;
+  background-color: #c3dbcf;
 }
 
 .item {
-  font-size: 25px;
-  padding: 40px 30px 0px 30px;
+  font-size: 20px;
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 2px 5px;
+  width: 200px;
+  transition: background 0.2s ease-in-out;
+}
+.item:hover {
+  background-color: #a7cacd;
+  cursor: pointer;
 }
 .item:first-child {
-  padding-top: 0px;
+  margin-top: 0px;
 }
 
 .main {
   display: flex;
-  justify-content: space-between;
   margin-top: 40px;
+}
+
+.content {
+  width: 900px;
+  margin-left: 70px;
+  background-color: #a5c7ac;
+}
+
+.footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  background-color: #a5c7ac;
+}
+
+.footer__info, .footer__text {
+  padding: 10px 20px;
+}
+
+.footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  background-color: #a5c7ac;
+}
+
+.footer__info, .footer__text {
+  padding: 10px 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+  position: relative;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  list-style: none;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  position: absolute;
+  cursor: pointer;
+}
+
+/* Next button */
+.month .next {
+  position: absolute;
+  right: 0;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+  width: 100%;
+  padding: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.days li {
+  width: 14%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #777;
+  padding-top: 10px;
+  padding: 5px;
+}
+
+.days li span:hover {
+  background-color: #e3e1e1;
+  width: 17px;
+  padding: 5px 8px;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important;
 }
 
 /*# sourceMappingURL=style.css.map */

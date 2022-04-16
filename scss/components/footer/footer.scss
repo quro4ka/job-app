@@ -1,0 +1,11 @@
+.footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: $bg-color;
+}
+
+.footer__info, .footer__text {
+    padding: 10px 20px;
+}
+
