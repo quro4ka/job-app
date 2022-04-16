@@ -1,0 +1,15 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    cursor: pointer;
+}
+
+.container {
+    max-width: $content-width;
+    background-color: $bg-color;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
